@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Wallet.API.Models.Dto;
+namespace WalletApp.API.Models.Dto;
 
 public class AddWalletDto
 {

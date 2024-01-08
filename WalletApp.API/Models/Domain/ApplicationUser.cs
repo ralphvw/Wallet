@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace Wallet.API.Models.Domain;
+namespace WalletApp.API.Models.Domain;
 
 public class ApplicationUser: IdentityUser
 {

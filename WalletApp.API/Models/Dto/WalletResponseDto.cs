@@ -1,4 +1,4 @@
-namespace Wallet.API.Models.Dto;
+namespace WalletApp.API.Models.Dto;
 
 public class WalletResponseDto
 {

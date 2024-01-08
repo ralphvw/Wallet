@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Wallet.API.Middlewares;
+namespace WalletApp.API.Middlewares;
 
 public class ExceptionHandlerMiddleware
 {

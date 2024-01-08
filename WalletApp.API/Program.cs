@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using WalletWebApi.Data;
-using WalletWebApi.Mappings;
-using WalletWebApi.Middlewares;
-using WalletWebApi.Models.Domain;
-using WalletWebApi.Repositories;
+using WalletApp.API.Data;
+using WalletApp.API.Mappings;
+using WalletApp.API.Middlewares;
+using WalletApp.API.Models.Domain;
+using WalletApp.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

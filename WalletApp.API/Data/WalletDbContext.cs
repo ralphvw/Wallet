@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Wallet.API.Models.Domain;
+using WalletApp.API.Models.Domain;
 
-namespace Wallet.API.Data;
+namespace WalletApp.API.Data;
 
 public class WalletDbContext : DbContext
 {
@@ -11,14 +11,14 @@ public class WalletDbContext : DbContext
 
     }
 
-    public DbSet<Models.Domain.Wallet> Wallets { get; set; }
+    public DbSet<Wallet> Wallets { get; set; }
     public DbSet<ApplicationUser> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<Models.Domain.Wallet>()
+        modelBuilder.Entity<Wallet>()
             .HasOne(w => w.Owner)
             .WithMany(u => u.Wallets)
             .HasForeignKey(w => w.OwnerId)

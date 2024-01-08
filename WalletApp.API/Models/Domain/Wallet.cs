@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Wallet.API.Models.Domain;
+namespace WalletApp.API.Models.Domain;
 
 public class Wallet
 {
