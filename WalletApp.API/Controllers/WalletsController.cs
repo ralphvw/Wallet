@@ -39,7 +39,7 @@ public class WalletsController: ControllerBase
         if (exceededLimit) return BadRequest("You have exceeded your wallet limit.");
         var wallet = new Wallet
         {
-            AccountNumber = request.AccountNumber.Substring(0, 6),
+            AccountNumber = request.Type == "card" ? request.AccountNumber.Substring(0, 6): request.AccountNumber,
             AccountScheme = request.AccountScheme.ToLower(),
             Name = request.Name,
             CreatedAt = DateTime.UtcNow,

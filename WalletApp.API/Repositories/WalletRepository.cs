@@ -48,7 +48,7 @@ public class WalletRepository: IWalletRepository
             .Where(w => w.Type.ToLower() == lowerType && w.AccountNumber == accountNumber && w.OwnerId == ownerId)
             .ToListAsync();
         
-        return matchingWallets.Count == 0;
+        return matchingWallets.Count > 0;
     }
 
     public async Task<bool> CheckUserLimit(string userId, int? limit = 5)
